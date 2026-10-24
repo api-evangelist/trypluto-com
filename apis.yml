@@ -1,25 +1,68 @@
 aid: trypluto-com
+
 name: Pluto
-description: 'Pluto is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by sierra-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/33c41e82-abb8-4669-9499-a8582a8f35ed/id-preview-95f3ae57--679efd5b-c14f-400d-81cb-01f63dcdf14e.lovable.app-1776992589521.png
+
+description: 'Pluto Health provides a clinical intelligence platform that unifies fragmented health data into a single source of truth, enabling care teams to close gaps, surface unmet needs, and deliver measurable outcomes. The platform offers in‑home phlebotomy, at‑home diagnostics, asynchronous clinician chats, and longitudinal follow‑up, serving health systems, providers, and patients across the United States.'
+
 url: https://raw.githubusercontent.com/api-evangelist/trypluto-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- HealthTech
+- Clinical Intelligence
+- Data Integration
+- Patient Care
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- sierra-ventures
+
 common:
+- type: Hosts
+  url: hosts/trypluto-com-hosts.yml
+- type: Vendors
+  url: vendors/trypluto-com-vendors.yml
+- type: DomainSecurity
+  url: security/trypluto-com-domain-security.yml
 - type: Website
   url: https://trypluto.com/
+
+apis: []
+
+x-backed-by:
+- sierra-ventures
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://trypluto.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

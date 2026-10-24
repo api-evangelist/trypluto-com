@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: trypluto.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 18 09:01:09 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: trypluto.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
